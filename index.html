@@ -1,0 +1,13 @@
+<html>
+<script type="text/javascript">
+	var java = require("java");
+
+	java.classpath.push("./src");
+	var Test = java.import("com.axisj.node.java.example.Test");
+
+	var result = Test.addNumbersSync(2, 3);
+	document.write("Result : " + result);
+</script>
+<body>
+</body>
+</html>
